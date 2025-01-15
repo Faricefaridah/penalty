@@ -121,9 +121,9 @@
             // Update table with details of the week
             breakdownTable.innerHTML += `
                 <tr>
-                    <td>KES{weekCounter}</td>
-                    <td>KES{daysForThisWeek} days</td>
-                    <td>$KES{penaltyForPeriod.toFixed(2)}</td>
+                    <td>${weekCounter}</td>
+                    <td>${daysForThisWeek} days</td>
+                    <td>$${penaltyForPeriod.toFixed(2)}</td>
                 </tr>
             `;
 
@@ -133,7 +133,7 @@
 
         // Display the total penalty
         document.getElementById('result').innerHTML =
-            "Total Penalty: KES" + totalPenalty.toFixed(2);
+            "Total Penalty: $" + totalPenalty.toFixed(2);
     }
 </script>
 
